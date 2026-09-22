@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dev-environment-checker"
+version = "1.0.0"
+description = "Audit local development toolchains against a declarative project policy."
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Radwan Abdulhadi Ahmed"}]
+dependencies = []
+
+[project.scripts]
+dev-env-check = "dev_environment_checker.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
